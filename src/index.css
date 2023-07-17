@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
+.facebook_line::before,
+.twitter_line::before,
+.instagram_line::before,
+.youtube_line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.facebook_line::before {
+    background-color: hsl(208, 92%, 53%);
+}
+
+.twitter_line::before {
+    background-color: hsl(203, 89%, 53%);
+}
+
+.instagram_line::before {
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.youtube_line::before {
+    background-color: hsl(348, 97%, 39%);
+}
+
+/* Button */
+.button_theme_dark {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.button_theme_light {
+    /* background: hsl(228, 12%, 85%); */
+    background: linear-gradient(to right, hsl(226, 100%, 89%), hsl(195, 29%, 75%));
+}
+
+.button_circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-1.3rem, -50%);
+    aspect-ratio: 1/1;
+    width: 1.1rem;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 50%;
+    transition: transform 150ms ease-in-out;
+}
+
+.button_circle_light::before {
+    transform: translate(.2rem, -50%);
+}
+
+/* Background */
+.background_box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15rem;
+    z-index: -1;
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.background_box_dark::before {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.background_box_light::before {
+    background-color: hsl(225, 100%, 98%);
+}
