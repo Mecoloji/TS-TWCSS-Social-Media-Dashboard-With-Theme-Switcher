@@ -57,13 +57,13 @@ Your users should be able to:
 
 Mobile 📱
 
-![](./design/mobile-design-dark.jpg)
-![](./design//mobile-design-light.jpg)
+![](./src/design/mobile-design-dark.jpg)
+![](./src/design/mobile-design-light.jpg)
 
 Desktop 🖥️
 
-![](./design/desktop-design-dark.jpg)
-![](./design/desktop-design-light.jpg)
+![](./src//design//desktop-design-dark.jpg)
+![](./src/design/desktop-design-light.jpg)
 
 ### Links
 
